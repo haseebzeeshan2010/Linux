@@ -1,3 +1,3 @@
 git add .
-git commit -m "Add benchmark program" # add commit message
+git commit -m "Make directory using mkdir" # add commit message
 git push
