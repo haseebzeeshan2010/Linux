@@ -1,3 +1,3 @@
 git add .
-git commit -m "create commit bash script" # add commit message
+git commit -m "Add benchmark program" # add commit message
 git push
