@@ -1,3 +1,3 @@
 git add .
-git commit -m "Rename benchmark.py to benchmarker.py with mv" # add commit message
+git commit -m "Created test.txt file using touch" # add commit message
 git push
