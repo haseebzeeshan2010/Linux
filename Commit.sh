@@ -1,3 +1,3 @@
 git add .
-git commit -m "Make directory using mkdir" # add commit message
+git commit -m "Move benchmark.py to folder using mv" # add commit message
 git push
