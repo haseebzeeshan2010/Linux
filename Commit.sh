@@ -1,3 +1,3 @@
 git add .
-git commit -m "Move benchmark.py to folder using mv" # add commit message
+git commit -m "Rename benchmark.py to benchmarker.py with mv" # add commit message
 git push

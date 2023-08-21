@@ -1,1 +1,2 @@
-mv benchmark.py /home/ec2-user/environment/Linux/Benchmarks
+cd Benchmarks
+mv benchmark.py benchmarker.py
