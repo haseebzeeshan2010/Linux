@@ -1,3 +1,3 @@
 git add .
-git commit -m "removed echo command" # add commit message
+git commit -m "find uptime of system" # add commit message
 git push
