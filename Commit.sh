@@ -1,3 +1,3 @@
 git add .
-git commit -m "cleared the command bash file" # add commit message
+git commit -m "find uptime using uptime command" # add commit message
 git push
