@@ -1,3 +1,3 @@
 git add .
-git commit -m "removed extra text" # add commit message
+git commit -m "cleared the command bash file" # add commit message
 git push
