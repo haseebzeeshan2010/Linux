@@ -1,3 +1,5 @@
 git add .
-git commit -m "updated benchmark program for multicore benchmark" # add commit message
+git commit -m "automate commit script more" # add commit message
 git push
+
+haseebzeeshan2010
