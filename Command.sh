@@ -1,1 +1,1 @@
-uptime
+mtr google.com
