@@ -1,1 +1,1 @@
-mtr google.com
+ls -al
