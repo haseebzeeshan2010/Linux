@@ -1,4 +1,4 @@
-touch file1
+touch file1.md
 ls
-rm file1
+cp file1.md file1_copy.md
 ls
