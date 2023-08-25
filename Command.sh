@@ -1,1 +1,1 @@
-ping google.com
+vi

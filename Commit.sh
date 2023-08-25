@@ -1,3 +1,3 @@
 git add .
-git commit -m "ping a website" # add commit message
+git commit -m "open vi editor" # add commit message
 git push
