@@ -1,3 +1,3 @@
 git add .
-git commit -m "open vi editor" # add commit message
+git commit -m "added shebang and printed message" # add commit message
 git push
