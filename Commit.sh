@@ -1,3 +1,3 @@
 git add .
-git commit -m "added shebang and printed message" # add commit message
+git commit -m "read message and use input for output message" # add commit message
 git push

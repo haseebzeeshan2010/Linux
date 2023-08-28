@@ -1,3 +1,5 @@
 #!/bin/bash
+echo "Enter your name?"
+read name
 
-echo "I will complete #90DaysOofDevOps challenge"
+echo "Hi $name, Thanks for reading :D"
