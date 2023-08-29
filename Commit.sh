@@ -1,3 +1,3 @@
 git add .
-git commit -m "read message and use input for output message" # add commit message
+git commit -m "find greatest number using command line" # add commit message
 git push
