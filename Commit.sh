@@ -1,3 +1,3 @@
 git add .
-git commit -m "make for loop" # add commit message
+git commit -m "make function using CLI" # add commit message
 git push

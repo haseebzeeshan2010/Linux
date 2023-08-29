@@ -1,6 +1,8 @@
 #!/bin/bash
-echo "For loop to print 1 to 10 numbers!"
-for i in {1..10}
-do
-echo "Value of i is: $i"
-done
+
+add_numbers() {
+    sum=$(($1 + $2))
+    echo "The sum of $1 and $2 is: $sum"
+}
+
+add_numbers 10 20
