@@ -1,8 +1,10 @@
 #!/bin/bash
 
-add_numbers() {
-    sum=$(($1 + $2))
-    echo "The sum of $1 and $2 is: $sum"
-}
+num_a=400
+num_b=200
 
-add_numbers 10 20
+if [ $num_a -lt $num_b ]; then
+    echo "$num_a is less than $num_b!"
+else
+    echo "$num_a is greater than $num_b!"
+fi
