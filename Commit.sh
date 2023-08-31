@@ -1,3 +1,3 @@
 git add .
-git commit -m "make if-else conditional" # add commit message
+git commit -m "find ls manual" # add commit message
 git push
