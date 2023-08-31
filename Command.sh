@@ -1,3 +1,1 @@
-#!/bin/bash
-
-man ls
+history
