@@ -1,3 +1,3 @@
 git add .
-git commit -m "find history of commands input" # add commit message
+git commit -m "find linux version" # add commit message
 git push

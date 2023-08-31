@@ -1,1 +1,1 @@
-history
+uname -r
