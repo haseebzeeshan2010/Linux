@@ -1,1 +1,1 @@
-uname -r
+ls -R
