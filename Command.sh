@@ -1,1 +1,2 @@
-ls -R
+sudo modprobe -r psmouse
+sudo modprobe psmouse
