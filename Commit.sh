@@ -1,3 +1,3 @@
 git add .
-git commit -m "List binary files" # add commit message
+git commit -m "Make and delete directories" # add commit message
 git push

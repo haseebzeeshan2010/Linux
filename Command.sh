@@ -1,1 +1,3 @@
-ls /bin
+mkdir testdir
+ls
+rmdir testdir
