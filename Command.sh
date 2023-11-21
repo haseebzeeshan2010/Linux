@@ -1,1 +1,1 @@
-ls -lah
+ls /bin
