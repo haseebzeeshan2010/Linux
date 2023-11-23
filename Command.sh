@@ -1,3 +1,1 @@
-mkdir testdir
-ls
-rmdir testdir
+mv test.txt..
