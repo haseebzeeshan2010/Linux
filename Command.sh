@@ -1,1 +1,1 @@
-mv test.txt..
+cat /proc/sys/vm/swappiness

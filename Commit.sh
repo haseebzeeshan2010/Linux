@@ -1,3 +1,3 @@
 git add .
-git commit -m "Move the testfile to the parent directory" # add commit message
+git commit -m "View the swap percentage of the disk" # add commit message
 git push
