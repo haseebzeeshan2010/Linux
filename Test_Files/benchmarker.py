@@ -1,6 +1,7 @@
 import time
 import multiprocessing
 
+
 def benchmark_task(max_duration):
     start_time = time.time()
     num_iterations = 0
@@ -40,12 +41,16 @@ def multi_core_benchmark(num_processes, max_duration):
 def main():
     max_duration = 1.0  # Adjust the duration in seconds as needed
     num_processes = multiprocessing.cpu_count()
-
-    single_core_result = single_core_benchmark(max_duration)
-    multi_core_result = multi_core_benchmark(num_processes, max_duration)
-
-    print("Single-core benchmark result:", single_core_result)
-    print("Multi-core benchmark result:", multi_core_result)
-
+    single_core_mean=0
+    multi_core_mean=0
+    for i in range(0,10):
+        single_core_result = single_core_benchmark(max_duration)
+        multi_core_result = multi_core_benchmark(num_processes, max_duration)
+        single_core_mean += single_core_result
+        multi_core_mean += multi_core_result
+        print(i)
+        
+    print("Single-core benchmark result:", single_core_mean/10)
+    print("Multi-core benchmark result:", multi_core_mean/10)
 if __name__ == "__main__":
     main()
