@@ -1,5 +1,6 @@
 import time
 import multiprocessing
+import matplotlib.pyplot as plt
 
 
 def benchmark_task(max_duration):
@@ -8,7 +9,6 @@ def benchmark_task(max_duration):
 
     while time.time() - start_time < max_duration:
         # Simulate some simple task
-        result = 2 + 2
         num_iterations += 1
 
     return num_iterations
@@ -38,19 +38,37 @@ def multi_core_benchmark(num_processes, max_duration):
 
     return total_result
 
+def result_graph(single_core_val, multi_core_val):
+    plt.subplot(1,2,1)    
+    plt.plot(single_core_val,label='Single core values')
+    plt.legend()
+    
+    plt.subplot(1,2,2)
+    plt.plot(multi_core_val,label='Multi core values')
+    plt.legend()
+    
+    plt.show()
+
 def main():
+    single_core_val = []
+    multi_core_val = []
     max_duration = 1.0  # Adjust the duration in seconds as needed
     num_processes = multiprocessing.cpu_count()
-    single_core_mean=0
-    multi_core_mean=0
-    for i in range(0,10):
+
+    for i in range(0,20):
+        print(f"starting benchmark {i+1}...")
         single_core_result = single_core_benchmark(max_duration)
         multi_core_result = multi_core_benchmark(num_processes, max_duration)
-        single_core_mean += single_core_result
-        multi_core_mean += multi_core_result
-        print(i)
+        single_core_val.append(single_core_result/100)
+        multi_core_val.append(multi_core_result/100)
+
+
+    # print("Single-core benchmark result:", single_core_mean/10)
+    # print("Multi-core benchmark result:", multi_core_mean/10)
+    result_graph(single_core_val, multi_core_val)
+
+    
         
-    print("Single-core benchmark result:", single_core_mean/10)
-    print("Multi-core benchmark result:", multi_core_mean/10)
+    
 if __name__ == "__main__":
     main()
