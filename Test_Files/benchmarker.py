@@ -50,21 +50,29 @@ def result_graph(single_core_val, multi_core_val):
     plt.show()
 
 def main():
+    num_benchmarks = 20
     single_core_val = []
     multi_core_val = []
+    single_core_mean = 0
+    multi_core_mean = 0
+
     max_duration = 1.0  # Adjust the duration in seconds as needed
     num_processes = multiprocessing.cpu_count()
 
-    for i in range(0,20):
+    for i in range(0,num_benchmarks):
         print(f"starting benchmark {i+1}...")
         single_core_result = single_core_benchmark(max_duration)
         multi_core_result = multi_core_benchmark(num_processes, max_duration)
         single_core_val.append(single_core_result/100)
         multi_core_val.append(multi_core_result/100)
 
-
-    # print("Single-core benchmark result:", single_core_mean/10)
-    # print("Multi-core benchmark result:", multi_core_mean/10)
+    for j in range(0,num_benchmarks):
+        single_core_mean += single_core_val[j]
+        multi_core_mean += multi_core_val[j]
+    
+    print("Single-core benchmark result:", round(single_core_mean))
+    print("Multi-core benchmark result:", round(multi_core_mean))
+    
     result_graph(single_core_val, multi_core_val)
 
     
